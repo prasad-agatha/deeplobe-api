@@ -1,0 +1,14 @@
+-r base.txt
+--extra-index-url https://download.pytorch.org/whl/cu113
+
+
+torch==1.11.0+cu113
+torchvision==0.12.0+cu113
+dj-database-url==0.5.0
+gunicorn==20.1.0
+whitenoise==6.2.0
+django-storages==1.12.3
+boto==2.49.0
+django-anymail==8.6
+uvicorn
+django-debug-toolbar==3.2
