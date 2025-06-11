@@ -1,0 +1,28 @@
+from django.urls import path, include
+
+urlpatterns = [
+    path("api/", include("deeplobe_api.api.views.urls.aimodel")),
+    path("api/", include("deeplobe_api.api.views.urls.annotation_hire_request")),
+    path("api/", include("deeplobe_api.api.views.urls.api_count")),
+    path("api/", include("deeplobe_api.api.views.urls.api_key")),
+    path("api/", include("deeplobe_api.api.views.urls.auth")),
+    path("api/", include("deeplobe_api.api.views.urls.auto_annotate_model")),
+    path("api/", include("deeplobe_api.api.views.urls.chargebee")),
+    path("api/", include("deeplobe_api.api.views.urls.cleaner")),
+    path("api/", include("deeplobe_api.api.views.urls.contact_us")),
+    path("api/", include("deeplobe_api.api.views.urls.country")),
+    path("api/", include("deeplobe_api.api.views.urls.media_asset")),
+    path("api/", include("deeplobe_api.api.views.urls.my_models")),
+    path("api/", include("deeplobe_api.api.views.urls.pretrained_models")),
+    path("api/", include("deeplobe_api.api.views.urls.register")),
+    path("api/", include("deeplobe_api.api.views.urls.state")),
+    path("api/", include("deeplobe_api.api.views.urls.subscription")),
+    path("api/", include("deeplobe_api.api.views.urls.support_apis")),
+    path("api/", include("deeplobe_api.api.views.urls.support")),
+    path("api/", include("deeplobe_api.api.views.urls.user")),
+    path("api/", include("deeplobe_api.api.views.urls.workspace")),
+    path("api/", include("deeplobe_api.api.views.urls.django_rq")),
+    path("api/", include("deeplobe_api.api.views.urls.frames")),
+    path("api/", include("deeplobe_api.api.views.urls.ocr_text_detection")),
+    path("api/", include("deeplobe_api.api.views.urls.stripe")),
+]
